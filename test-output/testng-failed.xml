@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test1(failed)">
+    <classes>
+      <class name="com.atmecs.newtour.link.LinkTest">
+        <methods>
+          <include name="setup"/>
+          <include name="link"/>
+        </methods>
+      </class> <!-- com.atmecs.newtour.link.LinkTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test3(failed)">
+    <classes>
+      <class name="com.atmecs.newtour.booking.Booking">
+        <methods>
+          <include name="setup"/>
+          <include name="register"/>
+        </methods>
+      </class> <!-- com.atmecs.newtour.booking.Booking -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test thread-count="5" name="Test4(failed)">
+    <classes>
+      <class name="com.atmecs.newtour.select.Confirmation">
+        <methods>
+          <include name="setup"/>
+          <include name="selectFlight"/>
+        </methods>
+      </class> <!-- com.atmecs.newtour.select.Confirmation -->
+    </classes>
+  </test> <!-- Test4(failed) -->
+</suite> <!-- Failed suite [Suite] -->

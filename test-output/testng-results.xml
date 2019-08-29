@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-08-29T15:12:36Z" name="Suite" finished-at="2019-08-29T15:16:07Z" duration-ms="210855">
+    <groups>
+    </groups>
+    <test started-at="2019-08-29T15:12:36Z" name="Test" finished-at="2019-08-29T15:12:57Z" duration-ms="21100">
+      <class name="com.atmecs.newtour.test.NewTourDemo">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.atmecs.newtour.test.NewTourDemo@240237d2]" started-at="2019-08-29T15:12:36Z" name="setup" finished-at="2019-08-29T15:12:57Z" duration-ms="20874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- com.atmecs.newtour.test.NewTourDemo -->
+    </test> <!-- Test -->
+    <test started-at="2019-08-29T15:13:00Z" name="Test1" finished-at="2019-08-29T15:13:14Z" duration-ms="14672">
+      <class name="com.atmecs.newtour.link.LinkTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.atmecs.newtour.link.LinkTest@527e5409]" started-at="2019-08-29T15:13:00Z" name="setup" finished-at="2019-08-29T15:13:14Z" duration-ms="14370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="link()[pri:0, instance:com.atmecs.newtour.link.LinkTest@527e5409]" started-at="2019-08-29T15:13:14Z" name="link" finished-at="2019-08-29T15:13:14Z" duration-ms="100" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Mercury Tours] but found [Welcome: Mercury Tours]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Mercury Tours] but found [Welcome: Mercury Tours]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.atmecs.newtour.link.LinkTest.link(LinkTest.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- link -->
+      </class> <!-- com.atmecs.newtour.link.LinkTest -->
+    </test> <!-- Test1 -->
+    <test started-at="2019-08-29T15:13:14Z" name="Test2" finished-at="2019-08-29T15:14:45Z" duration-ms="90628">
+      <class name="com.atmecs.newtour.login.Login">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.atmecs.newtour.login.Login@78dd667e]" started-at="2019-08-29T15:13:14Z" name="setup" finished-at="2019-08-29T15:13:37Z" duration-ms="22487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login()[pri:0, instance:com.atmecs.newtour.login.Login@78dd667e]" started-at="2019-08-29T15:13:37Z" name="login" finished-at="2019-08-29T15:14:45Z" duration-ms="68123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- com.atmecs.newtour.login.Login -->
+    </test> <!-- Test2 -->
+    <test started-at="2019-08-29T15:14:45Z" name="Test3" finished-at="2019-08-29T15:15:55Z" duration-ms="70141">
+      <class name="com.atmecs.newtour.booking.Booking">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.atmecs.newtour.booking.Booking@1df82230]" started-at="2019-08-29T15:14:45Z" name="setup" finished-at="2019-08-29T15:14:55Z" duration-ms="10465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="register()[pri:0, instance:com.atmecs.newtour.booking.Booking@1df82230]" started-at="2019-08-29T15:14:55Z" name="register" finished-at="2019-08-29T15:14:55Z" duration-ms="2" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Cannot find elements when the XPath is null.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
+at org.openqa.selenium.By$ByXPath.<init>(By.java:339)
+at org.openqa.selenium.By.xpath(By.java:92)
+at com.atmecs.newtour.booking.Booking.register(Booking.java:14)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method signature="login()[pri:0, instance:com.atmecs.newtour.booking.Booking@1df82230]" started-at="2019-08-29T15:14:55Z" name="login" finished-at="2019-08-29T15:15:55Z" duration-ms="59649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- com.atmecs.newtour.booking.Booking -->
+    </test> <!-- Test3 -->
+    <test started-at="2019-08-29T15:15:55Z" name="Test4" finished-at="2019-08-29T15:16:07Z" duration-ms="11966">
+      <class name="com.atmecs.newtour.select.Confirmation">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.atmecs.newtour.select.Confirmation@70be0a2b]" started-at="2019-08-29T15:15:55Z" name="setup" finished-at="2019-08-29T15:16:07Z" duration-ms="11955" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="selectFlight()[pri:0, instance:com.atmecs.newtour.select.Confirmation@70be0a2b]" started-at="2019-08-29T15:16:07Z" name="selectFlight" finished-at="2019-08-29T15:16:07Z" duration-ms="3" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Cannot find elements when the XPath is null.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
+at org.openqa.selenium.By$ByXPath.<init>(By.java:339)
+at org.openqa.selenium.By.xpath(By.java:92)
+at com.atmecs.newtour.select.Confirmation.selectFlight(Confirmation.java:13)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectFlight -->
+      </class> <!-- com.atmecs.newtour.select.Confirmation -->
+    </test> <!-- Test4 -->
+  </suite> <!-- Suite -->
+</testng-results>
