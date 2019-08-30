@@ -1,34 +1,28 @@
-package com.atmecs.newtour.test;
+package com.atmecs.newtour.testsuit;
 
 import java.io.FileInputStream;
-
 import java.io.IOException;
-import java.util.List;
 import java.util.Properties;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
-public class NewTourDemo {
-	protected WebDriver driver;
+public class TestBase {
+	protected static WebDriver driver;
 
-	public FileInputStream stream;
+	public static FileInputStream stream;
 	public Properties property = new Properties();
 
-	public Properties property1 = new Properties();
+	public static Properties property1 = new Properties();
 
-	public Properties property2 = new Properties();
+	public static Properties property2 = new Properties();
 
 	protected int count = 0;
-	String url;
+	protected String url;
 	String browserName;
 
 	@BeforeTest
@@ -62,8 +56,8 @@ public class NewTourDemo {
 
 	}
 
+	@AfterTest
+	public void close() {
+		driver.close();
+	}
 }
-	
-
-	
-	

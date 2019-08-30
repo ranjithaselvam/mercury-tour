@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.atmecs.newtour.test.NewTourDemo">
+      <class name="com.atmecs.newtour.testscript.Confirmation">
         <methods>
+          <include name="selectFlight"/>
           <include name="setup"/>
-          <include name="link"/>
+          <include name="close"/>
         </methods>
-      </class> <!-- com.atmecs.newtour.test.NewTourDemo -->
+      </class> <!-- com.atmecs.newtour.testscript.Confirmation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

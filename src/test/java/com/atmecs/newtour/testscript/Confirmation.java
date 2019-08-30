@@ -1,21 +1,24 @@
-package com.atmecs.newtour.select;
+package com.atmecs.newtour.testscript;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-import com.atmecs.newtour.test.NewTourDemo;
 
-public class Confirmation extends NewTourDemo {
+
+
+public class Confirmation extends Login {
 	@Test
 	public void selectFlight() throws InterruptedException {
 		driver.findElement(By.xpath(property1.getProperty("loc_depart_xpath_rbtn"))).click();
 		driver.findElement(By.xpath(property1.getProperty("loc_return_xpath_rbtn"))).click();
 		driver.findElement(By.xpath(property1.getProperty("loc_continue2_xpath_btn"))).click();
-
-		
-
+		/*
+		 * }
+		 * 
+		 * @Test public void details() throws Exception {
+		 */
 		driver.findElement(By.xpath(property1.getProperty("loc_fstname1_xpath_txt")))
 				.sendKeys(property2.getProperty("p1fn"));
 		driver.findElement(By.xpath(property1.getProperty("loc_lstname1_xpath_txt")))
@@ -23,6 +26,7 @@ public class Confirmation extends NewTourDemo {
 		WebElement select9 = driver.findElement(By.xpath(property1.getProperty("loc_meal1_xpath_slt")));
 		Select s9 = new Select(select9);
 		s9.selectByIndex(3);
+	
 
 		driver.findElement(By.xpath(property1.getProperty("loc_fstname2_xpath_txt")))
 				.sendKeys(property2.getProperty("p2fn"));
@@ -49,9 +53,8 @@ public class Confirmation extends NewTourDemo {
 		driver.findElement(By.xpath(property1.getProperty("loc_deliveryadd_xpath_chkb"))).click();
 		driver.findElement(By.xpath(property1.getProperty("loc_securepurchase_xpath_btn"))).click();
 		Thread.sleep(2000);
-		driver.close();
+		
 		
 	}
 }
-
 

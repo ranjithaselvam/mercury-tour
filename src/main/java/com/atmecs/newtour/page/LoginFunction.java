@@ -1,17 +1,19 @@
-package com.atmecs.newtour.login;
+package com.atmecs.newtour.page;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.security.PublicKey;
 
 import org.openqa.selenium.By;
-import org.testng.annotations.Test;
 
-import com.atmecs.newtour.test.NewTourDemo;
+import com.atmecs.newtour.testsuit.TestBase;
 
-public class Login extends NewTourDemo {
-	@Test
-	public void login() throws IOException {
-		stream = new FileInputStream(
+public class LoginFunction extends TestBase
+{
+    public static void gotoLoginpage() throws IOException
+    {
+    	stream = new FileInputStream(
 				"C:\\Users\\ranjitha.selvam\\eclipse-workspace\\NewtoursDemoAut\\src\\test\\resources\\locators\\path.properties");
 		property1.load(stream);
 		stream = new FileInputStream(
@@ -22,6 +24,5 @@ public class Login extends NewTourDemo {
 		driver.findElement(By.xpath(property1.getProperty("loc_pwd_xpath_txt")))
 				.sendKeys(property2.getProperty("password"));
 		driver.findElement(By.xpath(property1.getProperty("loc_login_xpath_btn"))).click();
-	}
-
+    }
 }

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Aug 29 20:08:09 IST 2019</td>
+<td>Started on:</td><td>Fri Aug 30 17:27:08 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>69 seconds (69303 ms)</td>
+<tr><td>Total time:</td><td>83 seconds (83058 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,11 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.atmecs.newtour.test.NewTourDemo.link()'><b>link</b><br>Test class: com.atmecs.newtour.test.NewTourDemo</td>
-<td><div><pre>java.lang.AssertionError: expected [Mercury Tours] but found [Welcome: Mercury Tours]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.atmecs.newtour.test.NewTourDemo.link(NewTourDemo.java:69)
+<td title='com.atmecs.newtour.testscript.Confirmation.selectFlight()'><b>selectFlight</b><br>Test class: com.atmecs.newtour.testscript.Confirmation</td>
+<td><div><pre>java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
+	at org.openqa.selenium.By$ByXPath.&lt;init&gt;(By.java:339)
+	at org.openqa.selenium.By.xpath(By.java:92)
+	at com.atmecs.newtour.testscript.Confirmation.selectFlight(Confirmation.java:14)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -109,15 +105,11 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1803093683", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1803093683'><pre>java.lang.AssertionError: expected [Mercury Tours] but found [Welcome: Mercury Tours]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.atmecs.newtour.test.NewTourDemo.link(NewTourDemo.java:69)
+</pre></div><a href='#' onClick='toggleBox("stack-trace782228073", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace782228073'><pre>java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
+	at org.openqa.selenium.By$ByXPath.&lt;init&gt;(By.java:339)
+	at org.openqa.selenium.By.xpath(By.java:92)
+	at com.atmecs.newtour.testscript.Confirmation.selectFlight(Confirmation.java:14)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -145,7 +137,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.atmecs.newtour.test.NewTourDemo@78b1cc93</td></tr>
+<td>com.atmecs.newtour.testscript.Confirmation@6295d394</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -155,20 +147,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.atmecs.newtour.test.NewTourDemo.login()'><b>login</b><br>Test class: com.atmecs.newtour.test.NewTourDemo</td>
+<td title='com.atmecs.newtour.testscript.Confirmation.login()'><b>login</b><br>Test class: com.atmecs.newtour.testscript.Confirmation</td>
 <td></td>
-<td>36</td>
-<td>com.atmecs.newtour.test.NewTourDemo@78b1cc93</td></tr>
+<td>54</td>
+<td>com.atmecs.newtour.testscript.Confirmation@6295d394</td></tr>
 <tr>
-<td title='com.atmecs.newtour.test.NewTourDemo.register()'><b>register</b><br>Test class: com.atmecs.newtour.test.NewTourDemo</td>
+<td title='com.atmecs.newtour.testscript.Confirmation.register()'><b>register</b><br>Test class: com.atmecs.newtour.testscript.Confirmation</td>
 <td></td>
-<td>5</td>
-<td>com.atmecs.newtour.test.NewTourDemo@78b1cc93</td></tr>
-<tr>
-<td title='com.atmecs.newtour.test.NewTourDemo.selectFlight()'><b>selectFlight</b><br>Test class: com.atmecs.newtour.test.NewTourDemo</td>
-<td></td>
-<td>9</td>
-<td>com.atmecs.newtour.test.NewTourDemo@78b1cc93</td></tr>
+<td>4</td>
+<td>com.atmecs.newtour.testscript.Confirmation@6295d394</td></tr>
 </table><p>
 </body>
 </html>

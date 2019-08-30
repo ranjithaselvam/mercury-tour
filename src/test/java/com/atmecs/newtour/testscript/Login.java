@@ -1,14 +1,24 @@
-package com.atmecs.newtour.booking;
+package com.atmecs.newtour.testscript;
+
+import java.io.FileInputStream;
+import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-import com.atmecs.newtour.login.Login;
+import com.atmecs.newtour.page.LoginFunction;
+import com.atmecs.newtour.testscript.NewTourDemo;
+import com.atmecs.newtour.testsuit.TestBase;
 
-public class Booking extends Login{
-	@Test
+public class Login extends TestBase {
+	@Test(priority=1)
+	public void login() throws IOException {
+       LoginFunction.gotoLoginpage();
+	
+	}
+	@Test(priority=2)
 	public void register() {
 
 		driver.findElement(By.xpath(property1.getProperty("loc_type_xpath_rbtn"))).click();
@@ -40,5 +50,6 @@ public class Booking extends Login{
 		s8.selectByIndex(2);
 		driver.findElement(By.xpath(property1.getProperty("loc_continue1_xpath_btn"))).click();
 	}
+
 
 }
